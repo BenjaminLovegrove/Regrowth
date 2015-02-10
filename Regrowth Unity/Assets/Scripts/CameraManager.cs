@@ -17,13 +17,13 @@ public class CameraManager : MonoBehaviour {
 		//Rotate Camera Around World
 		transform.LookAt (centerobj);
 
-		if (Input.GetKey (KeyCode.W) && transform.rotation.x < 85) {
+		if (Input.GetKey (KeyCode.W) && transform.position.y < 12.5f) {
 			transform.Translate(Vector3.up * camspeed * Time.deltaTime);
 		}
 		if (Input.GetKey (KeyCode.A)) {
 			transform.Translate(Vector3.left * camspeed * Time.deltaTime);
 		}
-		if (Input.GetKey (KeyCode.S)) {
+		if (Input.GetKey (KeyCode.S) && transform.position.y > -12.5f) {
 			transform.Translate(Vector3.down * camspeed * Time.deltaTime);
 		}
 		if (Input.GetKey (KeyCode.D)) {
