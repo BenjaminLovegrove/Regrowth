@@ -5,10 +5,11 @@ public class GameController : MonoBehaviour {
 
 	RaycastHit mouseClick;
 	public GameObject tree;
+	public int playerSeeds = 3;
 
 
 	void Start () {
-	
+
 	}
 
 	void Update () {
@@ -20,6 +21,19 @@ public class GameController : MonoBehaviour {
 				//if seeds > 0 instantiate seedling
 				if (mouseClick.collider.tag == "Ground"){
 					Instantiate (tree, mouseClick.point, Quaternion.identity);
+				} else if (mouseClick.collider.tag == "Seed"){
+					print ("hit");
+					playerSeeds ++;
+					Destroy (mouseClick.collider.gameObject);
+				}
+			}
+		}
+
+		if (Input.GetMouseButtonDown (1)) {
+			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			if (Physics.Raycast(ray, out mouseClick, 1000)){
+				if (mouseClick.collider.tag == "Vine"){
+					mouseClick.collider.BroadcastMessage("VineClick");
 				}
 			}
 		}
