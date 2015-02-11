@@ -24,12 +24,12 @@ public class Vine : MonoBehaviour {
 			vineGraphics.renderer.enabled = false;
 			dugVine.renderer.enabled = true;
 			vactive = false;
-			vineTimer = Random.Range(10,40);
+			vineTimer = Random.Range(20,60);
 
 			trees = GameObject.FindGameObjectsWithTag("Tree");
 			
 			foreach (GameObject tree in trees){
-				if (Vector3.Distance(this.transform.position, tree.transform.position) < 2){
+				if (Vector3.Distance(this.transform.position, tree.transform.position) < 3){
 					tree.BroadcastMessage("Living", SendMessageOptions.DontRequireReceiver);
 				}
 			}
@@ -54,7 +54,7 @@ public class Vine : MonoBehaviour {
 			trees = GameObject.FindGameObjectsWithTag("Tree");
 
 			foreach (GameObject tree in trees){
-				if (Vector3.Distance(this.transform.position, tree.transform.position) < 2){
+				if (Vector3.Distance(this.transform.position, tree.transform.position) < 3){
 					tree.BroadcastMessage("Dying", SendMessageOptions.DontRequireReceiver);
 				}
 			}
