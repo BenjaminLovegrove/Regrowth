@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\FoliageRng.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\InstRotate.cs" />
+     <Compile Include="Assets\Scripts\SproutTree.cs" />
      <Compile Include="Assets\Scripts\Vine.cs" />
      <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
  <Reference Include="UnityEngine.UI">

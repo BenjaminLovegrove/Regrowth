@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour {
 	RaycastHit mouseClick;
 	public GameObject tree;
 	public int playerSeeds = 3;
+	float gameTime = 0;
 
 
 	void Start () {
@@ -13,6 +14,8 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update () {
+
+		gameTime += Time.deltaTime;
 
 		//Left click - seed pick up / placement
 		if (Input.GetMouseButtonDown (0)) {
@@ -22,13 +25,13 @@ public class GameController : MonoBehaviour {
 				if (mouseClick.collider.tag == "Ground"){
 					Instantiate (tree, mouseClick.point, Quaternion.identity);
 				} else if (mouseClick.collider.tag == "Seed"){
-					print ("hit");
 					playerSeeds ++;
 					Destroy (mouseClick.collider.gameObject);
 				}
 			}
 		}
 
+		//Rick click - remove weeds
 		if (Input.GetMouseButtonDown (1)) {
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			if (Physics.Raycast(ray, out mouseClick, 1000)){
@@ -37,6 +40,10 @@ public class GameController : MonoBehaviour {
 				}
 			}
 		}
+
+	}
+
+	void OnGUI(){
 
 	}
 }
