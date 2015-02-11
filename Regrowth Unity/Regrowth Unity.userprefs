@@ -1,6 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Vine.cs">
+    <Files>
+      <File FileName="Assets\Scripts\SproutTree.cs" Line="23" Column="38" />
+      <File FileName="Assets\Scripts\CameraManager.cs" Line="40" Column="4" />
+      <File FileName="Assets\Scripts\GameController.cs" Line="20" Column="3" />
+      <File FileName="Assets\Scripts\Vine.cs" Line="24" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
