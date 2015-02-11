@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!1 &139352
 GameObject:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
@@ -43,7 +43,7 @@ GameObject:
   - 4: {fileID: 439356}
   - 33: {fileID: 3339352}
   - 23: {fileID: 2339352}
-  - 95: {fileID: 9539352}
+  - 95: {fileID: 9594728}
   m_Layer: 0
   m_Name: Graphic
   m_TagString: Untagged
@@ -57,12 +57,12 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139352}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .0297999997, z: 0}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: .707106829}
+  m_LocalPosition: {x: -.0229000021, y: .0298000332, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 439354}
-  m_RootOrder: 1
+  m_Father: {fileID: 439356}
+  m_RootOrder: 0
 --- !u!4 &439354
 Transform:
   m_ObjectHideFlags: 1
@@ -70,11 +70,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.51800001, y: 6.29580021, z: -1.24820006}
+  m_LocalPosition: {x: 1.01696479, y: 5.92832756, z: -2.08858275}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children:
   - {fileID: 439356}
-  - {fileID: 439352}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &439356
@@ -84,9 +83,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139356}
   m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: .0229000002}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 439352}
   m_Father: {fileID: 439354}
   m_RootOrder: 0
 --- !u!23 &2339352
@@ -116,7 +116,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139356}
   m_Mesh: {fileID: 4300000, guid: c69344593eae69643b801e9aa5e692a7, type: 3}
---- !u!95 &9539352
+--- !u!95 &9594728
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -124,8 +124,8 @@ Animator:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 139356}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: c69344593eae69643b801e9aa5e692a7, type: 3}
-  m_Controller: {fileID: 0}
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 13301c9483cc75e48b632fa2dac2146a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1

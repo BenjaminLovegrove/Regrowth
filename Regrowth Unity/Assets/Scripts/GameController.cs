@@ -9,10 +9,11 @@ public class GameController : MonoBehaviour {
 	float gameTime = 0;
 	int treeCount;
 	public int levelTrees = 30;
-
+	public GUIStyle myGUItext;
 
 	void Start () {
-
+		myGUItext = new GUIStyle ();
+		myGUItext.fontSize = 20;
 	}
 
 	void Update () {
@@ -48,9 +49,9 @@ public class GameController : MonoBehaviour {
 
 	//Temp UI
 	void OnGUI(){
-		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .45f, Screen.width, 20), "Seed Count: " + playerSeeds);
-		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .5f, Screen.width, 20), "Mature Trees: " + treeCount + "/" + levelTrees);
-		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .55f, Screen.width, 20), "Game Time: " + gameTime);
+		GUI.Label (new Rect (Screen.width * .05f, Screen.height * .45f, Screen.width, 20),"Seed Count: " + playerSeeds, myGUItext);
+		GUI.Label (new Rect (Screen.width * .05f, Screen.height * .5f, Screen.width, 20), "Mature Trees: " + treeCount + "/" + levelTrees, myGUItext);
+		GUI.Label (new Rect (Screen.width * .05f, Screen.height * .55f, Screen.width, 20), "Game Time: " + gameTime.ToString("0"), myGUItext);
 	}
 
 
