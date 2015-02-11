@@ -9,7 +9,7 @@ public class SproutTree : MonoBehaviour {
 	public float growTimer = 999f;
 	bool grown = false;
 	int danger = 0;
-	float lifetimer = 4;
+	float lifetimer = 8;
 
 	void Start () {
 		treeGraph = transform.Find ("Graphics");
@@ -34,7 +34,7 @@ public class SproutTree : MonoBehaviour {
 			if (danger > 0){
 				lifetimer -= Time.deltaTime;
 			} else {
-				lifetimer = 4;
+				lifetimer = 8;
 			}
 
 
