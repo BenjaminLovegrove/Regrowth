@@ -8,13 +8,13 @@ public class SproutTree : MonoBehaviour {
 	Transform sproutGraph;
 	public float growTimer = 999f;
 	bool grown = false;
-	public GameObject[] vines;
+	int danger = 0;
+	float lifetimer = 4;
 
 	void Start () {
 		treeGraph = transform.Find ("Graphics");
 		sproutGraph = transform.Find ("Sprout");
 		growTimer = Random.Range (25, 50);
-		vines = GameObject.FindGameObjectsWithTag ("Vine");
 	}
 	
 	void Update () {
@@ -27,12 +27,35 @@ public class SproutTree : MonoBehaviour {
 
 		if (grown == true) {
 			//Do tree stuff
-		}
-
-		foreach (GameObject vine in vines) {
-			if (Vector3.Distance(vine.transform.position, this.transform.position) < 5){
-
+			if (danger < 0){
+				danger = 0;
 			}
+
+			if (danger > 0){
+				lifetimer -= Time.deltaTime;
+			} else {
+				lifetimer = 4;
+			}
+
+
+			if (lifetimer <= 0){
+				Destroy(this.gameObject);
+			}
+		}
+	}
+
+
+	void Dying(){
+		danger ++;
+		if (danger > 0) {
+			this.BroadcastMessage("DyingMat");
+		}
+	}
+
+	void Living(){
+		danger --;
+		if (danger <= 0) {
+			this.BroadcastMessage("LivingMat");
 		}
 	}
 

@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11434064}
   m_Layer: 0
   m_Name: Tree
-  m_TagString: Untagged
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -219,6 +219,7 @@ MonoBehaviour:
   foliage1: {fileID: 2100000, guid: aedce4424341a97459818eff7a12c3ed, type: 2}
   foliage2: {fileID: 2100000, guid: a56ed95d0e13e1d4db716aa587bf0068, type: 2}
   foliage3: {fileID: 2100000, guid: f7c5ccd6f2df97040b81f0c71ad482d5, type: 2}
+  dying: {fileID: 2100000, guid: 05107c47485df6448b81ae2db8910d99, type: 2}
 --- !u!136 &13698334
 CapsuleCollider:
   m_ObjectHideFlags: 1

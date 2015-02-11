@@ -7,6 +7,7 @@ public class FoliageRng : MonoBehaviour {
 	public Material foliage1;
 	public Material foliage2;
 	public Material foliage3;
+	public Material dying;
 	Material chosenMat;
 	int rnd;
 	Material[] mats;
@@ -29,6 +30,18 @@ public class FoliageRng : MonoBehaviour {
 		mats[0] = chosenMat;
 		renderer.materials = mats;
 
+	}
+
+	void DyingMat(){
+		mats = renderer.materials;
+		mats[0] = dying;
+		renderer.materials = mats;
+	}
+
+	void LivingMat(){
+		mats = renderer.materials;
+		mats[0] = chosenMat;
+		renderer.materials = mats;
 	}
 
 }

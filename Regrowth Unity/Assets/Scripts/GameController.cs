@@ -24,8 +24,6 @@ public class GameController : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			if (Physics.Raycast(ray, out mouseClick, 1000)){
-				print (mouseClick.collider.name);
-				//if seeds > 0 instantiate seedling
 				if (mouseClick.collider.tag == "Ground" && playerSeeds > 0){
 					Instantiate (tree, mouseClick.point, Quaternion.identity);
 					playerSeeds --;

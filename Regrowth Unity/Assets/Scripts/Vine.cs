@@ -10,6 +10,7 @@ public class Vine : MonoBehaviour {
 	Transform seedSpawn;
 	int seedRNG;
 	public GameObject seed;
+	public GameObject[] trees;
 
 	void Start () {
 		vineGraphics = transform.Find ("Graphics");
@@ -25,6 +26,14 @@ public class Vine : MonoBehaviour {
 			vactive = false;
 			vineTimer = Random.Range(10,40);
 
+			trees = GameObject.FindGameObjectsWithTag("Tree");
+			
+			foreach (GameObject tree in trees){
+				if (Vector3.Distance(this.transform.position, tree.transform.position) < 2){
+					tree.BroadcastMessage("Living", SendMessageOptions.DontRequireReceiver);
+				}
+			}
+			
 			seedRNG = Random.Range (0,4);
 			if (seedRNG <= 1){
 				Instantiate (seed, seedSpawn.position, Quaternion.identity);
@@ -41,6 +50,14 @@ public class Vine : MonoBehaviour {
 			dugVine.renderer.enabled = false;
 			vineGraphics.renderer.enabled = true;
 			vactive = true;
+
+			trees = GameObject.FindGameObjectsWithTag("Tree");
+
+			foreach (GameObject tree in trees){
+				if (Vector3.Distance(this.transform.position, tree.transform.position) < 2){
+					tree.BroadcastMessage("Dying", SendMessageOptions.DontRequireReceiver);
+				}
+			}
 		}
 
 	}
