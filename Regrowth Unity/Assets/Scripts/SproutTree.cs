@@ -6,7 +6,6 @@ public class SproutTree : MonoBehaviour {
 	Transform treeGraph;
 	Transform sproutGraph;
 	public float growTimer = 999f;
-	bool sprout = true;
 	bool grown = false;
 
 	void Start () {
@@ -31,5 +30,6 @@ public class SproutTree : MonoBehaviour {
 	void Grow (){
 		sproutGraph.renderer.enabled = false;
 		treeGraph.renderer.enabled = true;
+		Camera.main.SendMessage ("AddTree");
 	}
 }

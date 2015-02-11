@@ -374,6 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tree: {fileID: 109392, guid: f1ec1ead13af10b4ab3ce672f45a40fa, type: 2}
   playerSeeds: 3
+  levelTrees: 30
 --- !u!1 &588239553
 GameObject:
   m_ObjectHideFlags: 0
