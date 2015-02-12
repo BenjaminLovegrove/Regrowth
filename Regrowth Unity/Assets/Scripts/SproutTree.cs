@@ -143,6 +143,10 @@ public class SproutTree : MonoBehaviour {
 	}
 
 	void Grow (){
+
+		CapsuleCollider cap = (CapsuleCollider)collider;
+		cap.height = 2.2f;
+
 		sproutGraph.renderer.enabled = false;
 		treeGraph.renderer.enabled = true;
 		Camera.main.SendMessage ("AddTree");
