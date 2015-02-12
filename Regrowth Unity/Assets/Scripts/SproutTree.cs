@@ -84,13 +84,15 @@ public class SproutTree : MonoBehaviour {
 	}
 
 	void OnFire(){
-		burning = true;
-		treeGraph.renderer.enabled = false;
-		fireGraph1.renderer.enabled = true;
-		fireGraph2.renderer.enabled = true;
-		fireGraph3.renderer.enabled = true;
-		fireGraph4.renderer.enabled = true;
-		fireGraph5.renderer.enabled = true;
+		if (grown) {
+			burning = true;
+			treeGraph.renderer.enabled = false;
+			fireGraph1.renderer.enabled = true;
+			fireGraph2.renderer.enabled = true;
+			fireGraph3.renderer.enabled = true;
+			fireGraph4.renderer.enabled = true;
+			fireGraph5.renderer.enabled = true;
+		}
 	}
 
 	void Burning(){

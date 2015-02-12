@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour {
 	float gameTime = 0;
 	int treeCount;
 	bool water = false;
-	public int levelTrees = 30;
+	public int levelTrees = 18;
 	public GUIStyle myGUItext;
 
 	void Start () {
