@@ -40,6 +40,7 @@ public class SproutTree : MonoBehaviour {
 
 			if (lifetimer <= 0){
 				Destroy(this.gameObject);
+				Camera.main.SendMessage("RemoveTree");
 			}
 		}
 	}
