@@ -11,6 +11,8 @@ public class SproutTree : MonoBehaviour {
 	int danger = 0;
 	float lifetimer = 8;
 	bool burning = false;
+	public GameObject[] trees;
+	float wet;
 
 	Transform fireGraph1;
 	Transform fireGraph2;
@@ -35,6 +37,7 @@ public class SproutTree : MonoBehaviour {
 	void Update () {
 		//Make tree grow up
 		growTimer -= Time.deltaTime;
+		wet -= Time.deltaTime; // Wet = immune to fire
 
 		if (growTimer <= 0 && grown == false) {
 			Grow();
@@ -67,6 +70,10 @@ public class SproutTree : MonoBehaviour {
 				Destroy(this.gameObject);
 				Camera.main.SendMessage("RemoveTree");
 			}
+
+			if (burning){
+				Burning();
+			}
 		}
 	}
 
@@ -79,9 +86,38 @@ public class SproutTree : MonoBehaviour {
 		fireGraph3.renderer.enabled = true;
 		fireGraph4.renderer.enabled = true;
 		fireGraph5.renderer.enabled = true;
-
 	}
 
+	void Burning(){
+		trees = GameObject.FindGameObjectsWithTag("Tree");
+		foreach (GameObject tree in trees){
+			if (tree.gameObject.GetInstanceID() != GetInstanceID()){
+				if (Vector3.Distance(this.transform.position, tree.transform.position) < 2f){
+					tree.SendMessage("FlameJump", SendMessageOptions.DontRequireReceiver);
+				}
+			}
+		}
+	}
+
+	void FlameJump(){
+		if (wet <= 0 && !burning) {
+			OnFire ();
+		}
+	}
+
+	void Extinguish(){
+		if (burning) {
+			Camera.main.SendMessage("UsedWater");
+			wet += 10;
+			danger --;
+			treeGraph.renderer.enabled = true;
+			fireGraph1.renderer.enabled = false;
+			fireGraph2.renderer.enabled = false;
+			fireGraph3.renderer.enabled = false;
+			fireGraph4.renderer.enabled = false;
+			fireGraph5.renderer.enabled = false;
+		}
+	}
 
 	void Dying(){
 		danger ++;
