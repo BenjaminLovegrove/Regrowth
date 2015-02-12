@@ -30,7 +30,7 @@ public class Vine : MonoBehaviour {
 			
 			foreach (GameObject tree in trees){
 				if (Vector3.Distance(this.transform.position, tree.transform.position) < 2.5f){
-					tree.BroadcastMessage("Living", SendMessageOptions.DontRequireReceiver);
+					tree.BroadcastMessage("Living", true, SendMessageOptions.DontRequireReceiver);
 				}
 			}
 			

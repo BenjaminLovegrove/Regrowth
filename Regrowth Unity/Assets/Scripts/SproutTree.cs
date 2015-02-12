@@ -33,7 +33,17 @@ public class SproutTree : MonoBehaviour {
 
 		growTimer = Random.Range (25, 50);
 	}
-	
+
+	void FixedUpdate(){
+		//Burst into flames
+		if (grown) {
+			fireRNG = Random.Range (0, 10000);
+			if (fireRNG < 4 && burning == false && wet <= 0) {
+				OnFire ();
+			}
+		}
+	}
+
 	void Update () {
 		//Make tree grow up
 		growTimer -= Time.deltaTime;
@@ -48,12 +58,6 @@ public class SproutTree : MonoBehaviour {
 		if (grown == true) {
 			//Do tree stuff
 
-			//Burst into flames
-			fireRNG = Random.Range (0,10000);
-			if (fireRNG < 500 && burning == false && wet <= 0){
-				OnFire();
-			}
-
 			//If tree is dying from vines
 			if (danger < 0){
 				danger = 0;
@@ -61,9 +65,9 @@ public class SproutTree : MonoBehaviour {
 			// If vines nearby lower life time, else reset life time
 			if (danger > 0){
 				lifetimer -= Time.deltaTime;
-			} else {
+			} else if (!burning) {
 				lifetimer = 8;
-				Living ();
+				Living (false);
 			}
 
 
@@ -74,12 +78,12 @@ public class SproutTree : MonoBehaviour {
 
 			if (burning){
 				Burning();
+				lifetimer -= Time.deltaTime;
 			}
 		}
 	}
 
 	void OnFire(){
-		danger ++;
 		burning = true;
 		treeGraph.renderer.enabled = false;
 		fireGraph1.renderer.enabled = true;
@@ -110,7 +114,6 @@ public class SproutTree : MonoBehaviour {
 		if (burning) {
 			Camera.main.SendMessage("UsedWater");
 			wet = 10;
-			danger --;
 			burning = false;
 			treeGraph.renderer.enabled = true;
 			fireGraph1.renderer.enabled = false;
@@ -128,8 +131,10 @@ public class SproutTree : MonoBehaviour {
 		}
 	}
 
-	void Living(){
-		danger --;
+	void Living(bool vine){
+		if (vine) {
+			danger --;
+		}
 		if (danger <= 0) {
 			this.BroadcastMessage("LivingMat");
 		}
