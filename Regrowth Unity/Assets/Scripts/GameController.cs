@@ -12,7 +12,16 @@ public class GameController : MonoBehaviour {
 	public int levelTrees = 18;
 	public GUIStyle myGUItext;
 
+	public Texture treeTex;
+	public Texture seedTex;
+	public Texture eBucketTex;
+	public Texture fBucketTex;
+	public Texture clockTex;
+	Texture currentBucket;
+
 	void Start () {
+		currentBucket = eBucketTex;
+
 		myGUItext = new GUIStyle ();
 		myGUItext.fontSize = 20;
 	}
@@ -43,6 +52,7 @@ public class GameController : MonoBehaviour {
 					mouseClick.collider.BroadcastMessage("Extinguish");
 				} else if (mouseClick.collider.tag == "Water"){
 					water = true;
+					currentBucket = fBucketTex;
 				}
 			}
 		}
@@ -61,13 +71,18 @@ public class GameController : MonoBehaviour {
 
 	//Temp UI
 	void OnGUI(){
-		GUI.Label (new Rect (Screen.width * .05f, Screen.height * .45f, Screen.width, 20),"Seed Count: " + playerSeeds, myGUItext);
-		GUI.Label (new Rect (Screen.width * .05f, Screen.height * .5f, Screen.width, 20), "Mature Trees: " + treeCount + "/" + levelTrees, myGUItext);
-		GUI.Label (new Rect (Screen.width * .05f, Screen.height * .55f, Screen.width, 20), "Game Time: " + gameTime.ToString("0"), myGUItext);
+		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .3f, 64, 64), seedTex);
+		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .4f, 64, 64), treeTex);
+		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .5f, 64, 64), clockTex);
+		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .6f, 64, 64), currentBucket);
+
+		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .32f, Screen.width, 20),playerSeeds.ToString(), myGUItext);
+		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .42f, Screen.width, 20),treeCount + "/" + levelTrees, myGUItext);
+		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .52f, Screen.width, 20),gameTime.ToString("0"), myGUItext);
 		if (water) {
-			GUI.Label (new Rect (Screen.width * .05f, Screen.height * .6f, Screen.width, 20), "Bucket full!", myGUItext);
+			GUI.Label (new Rect (Screen.width * .1f, Screen.height * .62f, Screen.width, 20), "Bucket full!", myGUItext);
 		} else {
-			GUI.Label (new Rect (Screen.width * .05f, Screen.height * .6f, Screen.width, 20), "Bucket empty!", myGUItext);
+			GUI.Label (new Rect (Screen.width * .1f, Screen.height * .62f, Screen.width, 20), "Bucket empty!", myGUItext);
 		}
 	}
 
@@ -82,6 +97,7 @@ public class GameController : MonoBehaviour {
 	}
 
 	void UsedWater(){
+		currentBucket = eBucketTex;
 		water = false;
 	}
 }
