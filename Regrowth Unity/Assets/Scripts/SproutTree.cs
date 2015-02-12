@@ -50,7 +50,7 @@ public class SproutTree : MonoBehaviour {
 
 			//Burst into flames
 			fireRNG = Random.Range (0,10000);
-			if (fireRNG < 500 && burning == false){
+			if (fireRNG < 500 && burning == false && wet <= 0){
 				OnFire();
 			}
 
@@ -63,6 +63,7 @@ public class SproutTree : MonoBehaviour {
 				lifetimer -= Time.deltaTime;
 			} else {
 				lifetimer = 8;
+				Living ();
 			}
 
 
@@ -108,8 +109,9 @@ public class SproutTree : MonoBehaviour {
 	void Extinguish(){
 		if (burning) {
 			Camera.main.SendMessage("UsedWater");
-			wet += 10;
+			wet = 10;
 			danger --;
+			burning = false;
 			treeGraph.renderer.enabled = true;
 			fireGraph1.renderer.enabled = false;
 			fireGraph2.renderer.enabled = false;
