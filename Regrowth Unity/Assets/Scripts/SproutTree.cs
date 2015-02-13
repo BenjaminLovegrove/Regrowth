@@ -79,6 +79,14 @@ public class SproutTree : MonoBehaviour {
 			if (burning){
 				Burning();
 				lifetimer -= Time.deltaTime;
+
+				if (!audio.isPlaying){
+					audio.Play();
+				}
+			} else {
+				if (audio.isPlaying){
+					audio.Stop();
+				}
 			}
 		}
 	}

@@ -19,6 +19,13 @@ public class GameController : MonoBehaviour {
 	public Texture clockTex;
 	Texture currentBucket;
 
+	public float SFXvol = 0.5f;
+	public AudioClip extinguish;
+	public AudioClip dig;
+	public AudioClip plant;
+	public AudioClip seedpu;
+	public AudioClip waterscoop;
+
 	void Start () {
 		currentBucket = eBucketTex;
 
@@ -37,7 +44,9 @@ public class GameController : MonoBehaviour {
 				if (mouseClick.collider.tag == "Ground" && playerSeeds > 0){
 					Instantiate (tree, mouseClick.point, Quaternion.identity);
 					playerSeeds --;
+					audio.PlayOneShot(plant,SFXvol);
 				} else if (mouseClick.collider.tag == "Seed"){
+					audio.PlayOneShot(seedpu,SFXvol);
 					playerSeeds ++;
 					Destroy (mouseClick.collider.gameObject);
 				}
@@ -51,8 +60,11 @@ public class GameController : MonoBehaviour {
 				if (mouseClick.collider.tag == "Tree" && water){
 					mouseClick.collider.BroadcastMessage("Extinguish");
 				} else if (mouseClick.collider.tag == "Water"){
-					water = true;
-					currentBucket = fBucketTex;
+					if (!water){
+						water = true;
+						currentBucket = fBucketTex;
+						audio.PlayOneShot(waterscoop,SFXvol);
+					}
 				}
 			}
 		}
@@ -63,6 +75,7 @@ public class GameController : MonoBehaviour {
 			if (Physics.Raycast(ray, out mouseClick, 1000)){
 				if (mouseClick.collider.tag == "Vine"){
 					mouseClick.collider.BroadcastMessage("VineClick");
+					audio.PlayOneShot(dig,SFXvol);
 				}
 			}
 		}
@@ -99,5 +112,6 @@ public class GameController : MonoBehaviour {
 	void UsedWater(){
 		currentBucket = eBucketTex;
 		water = false;
+		audio.PlayOneShot(extinguish,SFXvol);
 	}
 }

@@ -4,7 +4,7 @@ using System.Collections;
 public class CameraManager : MonoBehaviour {
 
 	public Transform centerobj;
-	public float camspeed = 75f;
+	public float camspeed = 10f;
 	bool maxOut = false;
 	bool maxIn = false;
 
