@@ -2825,6 +2825,7 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
+  instructionsTex: {fileID: 2800000, guid: 4db4b9d2e8ca59d4fb674f9beed254d7, type: 3}
   treeTex: {fileID: 2800000, guid: b3aadafa48ed3b0409fceb4339d0a194, type: 3}
   seedTex: {fileID: 2800000, guid: 73fcfd80b51126e4681b3104872eabcc, type: 3}
   eBucketTex: {fileID: 2800000, guid: d91358dcaa001af42986c69f531d143c, type: 3}
