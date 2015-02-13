@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Menu\SCR_Menu.cs" />
      <Compile Include="Assets\Scripts\CameraManager.cs" />
      <Compile Include="Assets\Scripts\FoliageRng.cs" />
      <Compile Include="Assets\Scripts\GameController.cs" />
