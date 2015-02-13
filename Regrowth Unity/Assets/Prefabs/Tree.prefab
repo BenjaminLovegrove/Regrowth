@@ -593,6 +593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growTimer: 999
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!114 &11488494
 MonoBehaviour:
   m_ObjectHideFlags: 1

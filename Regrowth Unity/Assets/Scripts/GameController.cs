@@ -9,8 +9,9 @@ public class GameController : MonoBehaviour {
 	float gameTime = 0;
 	int treeCount;
 	bool water = false;
-	public int levelTrees = 18;
+	public int levelTrees = 20;
 	public GUIStyle myGUItext;
+	public GUIStyle myGUItextLge;
 
 	public Texture treeTex;
 	public Texture seedTex;
@@ -31,6 +32,9 @@ public class GameController : MonoBehaviour {
 
 		myGUItext = new GUIStyle ();
 		myGUItext.fontSize = 20;
+
+		myGUItextLge = new GUIStyle ();
+		myGUItextLge.fontSize = 30;
 	}
 
 	void Update () {
@@ -84,18 +88,21 @@ public class GameController : MonoBehaviour {
 
 	//Temp UI
 	void OnGUI(){
-		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .3f, 64, 64), seedTex);
-		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .4f, 64, 64), treeTex);
-		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .5f, 64, 64), clockTex);
-		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .6f, 64, 64), currentBucket);
 
-		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .32f, Screen.width, 20),playerSeeds.ToString(), myGUItext);
-		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .42f, Screen.width, 20),treeCount + "/" + levelTrees, myGUItext);
-		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .52f, Screen.width, 20),gameTime.ToString("0"), myGUItext);
+		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .2f - 64, 128, 128), treeTex);
+
+		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .5f - 24, 64, 64), seedTex);
+		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .6f - 24, 64, 64), clockTex);
+		GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .7f - 24, 64, 64), currentBucket);
+
+		GUI.Label (new Rect (Screen.width * .15f, Screen.height * .2f, Screen.width, 20),treeCount + "/" + levelTrees, myGUItextLge);
+
+		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .5f, Screen.width, 20),playerSeeds.ToString(), myGUItext);
+		GUI.Label (new Rect (Screen.width * .1f, Screen.height * .6f, Screen.width, 20),gameTime.ToString("0"), myGUItext);
 		if (water) {
-			GUI.Label (new Rect (Screen.width * .1f, Screen.height * .62f, Screen.width, 20), "Bucket full!", myGUItext);
+			GUI.Label (new Rect (Screen.width * .1f, Screen.height * .7f, Screen.width, 20), "Bucket full!", myGUItext);
 		} else {
-			GUI.Label (new Rect (Screen.width * .1f, Screen.height * .62f, Screen.width, 20), "Bucket empty!", myGUItext);
+			GUI.Label (new Rect (Screen.width * .1f, Screen.height * .7f, Screen.width, 20), "Bucket empty!", myGUItext);
 		}
 	}
 

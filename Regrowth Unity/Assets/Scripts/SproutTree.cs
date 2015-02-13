@@ -21,6 +21,8 @@ public class SproutTree : MonoBehaviour {
 	Transform fireGraph5;
 	int fireRNG;
 
+	public AudioClip growSFX;
+
 	void Start () {
 		treeGraph = transform.Find ("Graphics");
 		sproutGraph = transform.Find ("Sprout");
@@ -151,6 +153,7 @@ public class SproutTree : MonoBehaviour {
 	}
 
 	void Grow (){
+		audio.PlayOneShot (growSFX, 1f);
 
 		CapsuleCollider cap = (CapsuleCollider)collider;
 		cap.height = 2.2f;

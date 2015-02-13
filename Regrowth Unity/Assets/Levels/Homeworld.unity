@@ -2218,8 +2218,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tree: {fileID: 109392, guid: f1ec1ead13af10b4ab3ce672f45a40fa, type: 2}
   playerSeeds: 3
-  levelTrees: 18
+  levelTrees: 20
   myGUItext:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  myGUItextLge:
     m_Name: 
     m_Normal:
       m_Background: {fileID: 0}
@@ -2288,6 +2347,7 @@ MonoBehaviour:
   dig: {fileID: 8300000, guid: 179546a5666f64a4aaac6a4b8c080ffe, type: 3}
   plant: {fileID: 8300000, guid: 238a4daaeab8e5d4f84988d8f8c516c8, type: 3}
   seedpu: {fileID: 8300000, guid: 4f8fbc38ebf892745a2c511f3b145d83, type: 3}
+  waterscoop: {fileID: 8300000, guid: dd8f58bc1bbebea499690fc29ba0b33c, type: 3}
 --- !u!1001 &511350517
 Prefab:
   m_ObjectHideFlags: 0
