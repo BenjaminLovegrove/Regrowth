@@ -83,7 +83,7 @@ public class GameController : MonoBehaviour {
 				if (Physics.Raycast (ray, out mouseClick, 1000)) {
 					if (mouseClick.collider.tag == "Vine") {
 						mouseClick.collider.BroadcastMessage ("VineClick");
-						audio.PlayOneShot (dig, SFXvol);
+						audio.PlayOneShot (dig, 0.3f);
 					}
 				}
 			}
@@ -134,6 +134,6 @@ public class GameController : MonoBehaviour {
 	void UsedWater(){
 		currentBucket = eBucketTex;
 		water = false;
-		audio.PlayOneShot(extinguish,SFXvol);
+		audio.PlayOneShot(extinguish,0.3f);
 	}
 }
