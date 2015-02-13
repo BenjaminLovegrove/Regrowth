@@ -12,6 +12,8 @@ public class Vine : MonoBehaviour {
 	public GameObject seed;
 	public GameObject[] trees;
 
+	public AudioClip growSFX;
+
 	void Start () {
 		vineGraphics = transform.Find ("Graphics");
 		dugVine = transform.Find ("VineDug");
@@ -50,6 +52,7 @@ public class Vine : MonoBehaviour {
 			dugVine.renderer.enabled = false;
 			vineGraphics.renderer.enabled = true;
 			vactive = true;
+			audio.PlayOneShot(growSFX,1);
 
 			trees = GameObject.FindGameObjectsWithTag("Tree");
 

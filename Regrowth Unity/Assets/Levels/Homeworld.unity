@@ -510,6 +510,7 @@ GameObject:
   - 114: {fileID: 127160197}
   - 135: {fileID: 127160196}
   - 114: {fileID: 127160195}
+  - 82: {fileID: 127160198}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -546,6 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &127160196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -572,6 +574,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &127160198
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1062487182}
+  m_GameObject: {fileID: 127160193}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &165339213
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +644,7 @@ GameObject:
   - 114: {fileID: 165339217}
   - 135: {fileID: 165339216}
   - 114: {fileID: 165339215}
+  - 82: {fileID: 165339218}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -619,6 +681,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &165339216
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -645,6 +708,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &165339218
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 76793116}
+  m_GameObject: {fileID: 165339213}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &181490845
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +778,7 @@ GameObject:
   - 114: {fileID: 181490848}
   - 135: {fileID: 181490847}
   - 114: {fileID: 181490846}
+  - 82: {fileID: 181490850}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -677,6 +800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &181490847
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -718,6 +842,65 @@ Transform:
   - {fileID: 1189001122}
   m_Father: {fileID: 608800898}
   m_RootOrder: 20
+--- !u!82 &181490850
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 428368935}
+  m_GameObject: {fileID: 181490845}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &208597838
 GameObject:
   m_ObjectHideFlags: 0
@@ -729,6 +912,7 @@ GameObject:
   - 114: {fileID: 208597842}
   - 135: {fileID: 208597841}
   - 114: {fileID: 208597840}
+  - 82: {fileID: 208597843}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -765,6 +949,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &208597841
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -791,6 +976,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &208597843
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1876909579}
+  m_GameObject: {fileID: 208597838}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &229275000
 Prefab:
   m_ObjectHideFlags: 0
@@ -846,6 +1090,7 @@ GameObject:
   - 114: {fileID: 235911236}
   - 135: {fileID: 235911235}
   - 114: {fileID: 235911234}
+  - 82: {fileID: 235911237}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -882,6 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &235911235
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -908,6 +1154,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &235911237
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 2100156525}
+  m_GameObject: {fileID: 235911232}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &247738865
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +1296,7 @@ GameObject:
   - 114: {fileID: 261409282}
   - 135: {fileID: 261409283}
   - 114: {fileID: 261409284}
+  - 82: {fileID: 261409285}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -1053,6 +1359,66 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
+--- !u!82 &261409285
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1683295194}
+  m_GameObject: {fileID: 261409280}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &261731400
 GameObject:
   m_ObjectHideFlags: 0
@@ -1740,6 +2106,7 @@ GameObject:
   - 114: {fileID: 393422432}
   - 135: {fileID: 393422431}
   - 114: {fileID: 393422430}
+  - 82: {fileID: 393422433}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -1776,6 +2143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &393422431
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1802,6 +2170,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &393422433
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1149856543}
+  m_GameObject: {fileID: 393422428}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1001 &428368935
 Prefab:
   m_ObjectHideFlags: 0
@@ -1901,6 +2328,7 @@ GameObject:
   - 114: {fileID: 467958629}
   - 135: {fileID: 467958628}
   - 114: {fileID: 467958627}
+  - 82: {fileID: 467958630}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -1937,6 +2365,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &467958628
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1963,6 +2392,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &467958630
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1462814020}
+  m_GameObject: {fileID: 467958625}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &494069043
 GameObject:
   m_ObjectHideFlags: 0
@@ -2555,6 +3043,7 @@ GameObject:
   - 114: {fileID: 605042291}
   - 135: {fileID: 605042290}
   - 114: {fileID: 605042289}
+  - 82: {fileID: 605042292}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -2591,6 +3080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &605042290
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2617,6 +3107,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &605042292
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 2106406489}
+  m_GameObject: {fileID: 605042287}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &608800897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,6 +3383,7 @@ GameObject:
   - 114: {fileID: 697178981}
   - 135: {fileID: 697178980}
   - 114: {fileID: 697178979}
+  - 82: {fileID: 697178982}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -2870,6 +3420,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &697178980
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2896,6 +3447,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &697178982
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 296536882}
+  m_GameObject: {fileID: 697178977}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &713763680
 GameObject:
   m_ObjectHideFlags: 0
@@ -3792,6 +4402,7 @@ GameObject:
   - 114: {fileID: 929701099}
   - 135: {fileID: 929701098}
   - 114: {fileID: 929701097}
+  - 82: {fileID: 929701100}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -3828,6 +4439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &929701098
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3854,6 +4466,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &929701100
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 309020624}
+  m_GameObject: {fileID: 929701095}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &940899105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3940,6 +4611,7 @@ GameObject:
   - 114: {fileID: 961471423}
   - 135: {fileID: 961471422}
   - 114: {fileID: 961471421}
+  - 82: {fileID: 961471424}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -3976,6 +4648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &961471422
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4002,6 +4675,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &961471424
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 511350517}
+  m_GameObject: {fileID: 961471419}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &971530693
 GameObject:
   m_ObjectHideFlags: 0
@@ -4283,6 +5015,7 @@ GameObject:
   - 114: {fileID: 1086537088}
   - 135: {fileID: 1086537087}
   - 114: {fileID: 1086537086}
+  - 82: {fileID: 1086537090}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -4304,6 +5037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1086537087
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4345,6 +5079,65 @@ Transform:
   - {fileID: 688338320}
   m_Father: {fileID: 608800898}
   m_RootOrder: 7
+--- !u!82 &1086537090
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1108014088}
+  m_GameObject: {fileID: 1086537085}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1088894630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4698,6 +5491,7 @@ GameObject:
   - 114: {fileID: 1177805430}
   - 135: {fileID: 1177805429}
   - 114: {fileID: 1177805428}
+  - 82: {fileID: 1177805431}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -4734,6 +5528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1177805429
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4760,6 +5555,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &1177805431
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 95297105}
+  m_GameObject: {fileID: 1177805426}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1184692828
 GameObject:
   m_ObjectHideFlags: 0
@@ -4873,6 +5727,7 @@ GameObject:
   - 114: {fileID: 1207482002}
   - 135: {fileID: 1207482001}
   - 114: {fileID: 1207482000}
+  - 82: {fileID: 1207482004}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -4894,6 +5749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1207482001
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4935,6 +5791,65 @@ Transform:
   - {fileID: 1306358532}
   m_Father: {fileID: 608800898}
   m_RootOrder: 2
+--- !u!82 &1207482004
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1935853932}
+  m_GameObject: {fileID: 1207481999}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1212279713
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,6 +5936,7 @@ GameObject:
   - 114: {fileID: 1219003692}
   - 135: {fileID: 1219003691}
   - 114: {fileID: 1219003690}
+  - 82: {fileID: 1219003693}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -5057,6 +5973,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1219003691
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5083,6 +6000,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &1219003693
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 823268084}
+  m_GameObject: {fileID: 1219003688}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1241114344
 GameObject:
   m_ObjectHideFlags: 0
@@ -5094,6 +6070,7 @@ GameObject:
   - 114: {fileID: 1241114348}
   - 135: {fileID: 1241114347}
   - 114: {fileID: 1241114346}
+  - 82: {fileID: 1241114349}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -5130,6 +6107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1241114347
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5156,6 +6134,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &1241114349
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 229275000}
+  m_GameObject: {fileID: 1241114344}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1254562433
 GameObject:
   m_ObjectHideFlags: 0
@@ -5571,6 +6608,7 @@ GameObject:
   - 114: {fileID: 1407176340}
   - 135: {fileID: 1407176339}
   - 114: {fileID: 1407176338}
+  - 82: {fileID: 1407176341}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -5607,6 +6645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1407176339
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5633,6 +6672,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &1407176341
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1473854576}
+  m_GameObject: {fileID: 1407176336}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1426137072
 GameObject:
   m_ObjectHideFlags: 0
@@ -5644,6 +6742,7 @@ GameObject:
   - 114: {fileID: 1426137076}
   - 135: {fileID: 1426137075}
   - 114: {fileID: 1426137074}
+  - 82: {fileID: 1426137077}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -5680,6 +6779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1426137075
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5706,6 +6806,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &1426137077
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 436114073}
+  m_GameObject: {fileID: 1426137072}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1458210225
 GameObject:
   m_ObjectHideFlags: 0
@@ -6564,6 +7723,7 @@ GameObject:
   - 114: {fileID: 1720435989}
   - 135: {fileID: 1720435988}
   - 114: {fileID: 1720435987}
+  - 82: {fileID: 1720435991}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -6585,6 +7745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1720435988
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6626,6 +7787,65 @@ Transform:
   - {fileID: 1970257594}
   m_Father: {fileID: 608800898}
   m_RootOrder: 6
+--- !u!82 &1720435991
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1266430991}
+  m_GameObject: {fileID: 1720435986}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1745577302
 GameObject:
   m_ObjectHideFlags: 0
@@ -6904,6 +8124,7 @@ GameObject:
   - 114: {fileID: 1800333877}
   - 135: {fileID: 1800333876}
   - 114: {fileID: 1800333875}
+  - 82: {fileID: 1800333878}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -6940,6 +8161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1800333876
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6966,6 +8188,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &1800333878
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 1285705068}
+  m_GameObject: {fileID: 1800333873}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &1800821733
 GameObject:
   m_ObjectHideFlags: 0
@@ -7428,6 +8709,7 @@ GameObject:
   - 114: {fileID: 1995592224}
   - 135: {fileID: 1995592223}
   - 114: {fileID: 1995592222}
+  - 82: {fileID: 1995592225}
   m_Layer: 0
   m_Name: Vine Weed
   m_TagString: Vine
@@ -7464,6 +8746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   seed: {fileID: 139354, guid: 88eeb9ebc8557f146808d1351a44c857, type: 2}
   trees: []
+  growSFX: {fileID: 8300000, guid: 84e44fabcb84e854a972240a1744262d, type: 3}
 --- !u!135 &1995592223
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7490,6 +8773,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   centerobj: {fileID: 400084, guid: e98550eb98ad0754cb79e881754fec2c, type: 2}
+--- !u!82 &1995592225
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 8251368, guid: cfd8cccce01db324e8d5aa76a3c1ef93,
+    type: 2}
+  m_PrefabInternal: {fileID: 896499190}
+  m_GameObject: {fileID: 1995592220}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!1 &2011816090
 GameObject:
   m_ObjectHideFlags: 0
