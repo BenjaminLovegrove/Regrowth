@@ -8,6 +8,10 @@ public class SCR_Menu : MonoBehaviour {
 
 	void Update () {
 
+		if (Input.GetKey(KeyCode.Escape)){
+			Application.Quit();
+		}
+
 		transform.LookAt (centerobj);
 		transform.Translate(Vector3.right * 1 * Time.deltaTime);
 		transform.LookAt (centerobj);

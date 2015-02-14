@@ -21,6 +21,10 @@ public class GameController : MonoBehaviour {
 	public Texture clockTex;
 	Texture currentBucket;
 
+	public Texture winTex;
+	public float winDelay = 4;
+	public bool win = false;
+
 	public float SFXvol = 0.5f;
 	public AudioClip extinguish;
 	public AudioClip dig;
@@ -42,54 +46,70 @@ public class GameController : MonoBehaviour {
 
 	void Update () {
 
-		if (!instructions) {
-			gameTime += Time.deltaTime;
+		if (Input.GetKey(KeyCode.Escape)){
+			Application.Quit();
+		}
 
-			//Left click - seed pick up / placement
-			if (Input.GetMouseButtonDown (0)) {
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				if (Physics.Raycast (ray, out mouseClick, 1000)) {
-					if (mouseClick.collider.tag == "Ground" && playerSeeds > 0) {
-						Instantiate (tree, mouseClick.point, Quaternion.identity);
-						playerSeeds --;
-						audio.PlayOneShot (plant, SFXvol);
-					} else if (mouseClick.collider.tag == "Seed") {
-						audio.PlayOneShot (seedpu, SFXvol);
-						playerSeeds ++;
-						Destroy (mouseClick.collider.gameObject);
-					}
-				}
+		if (treeCount >= levelTrees) {
+			win = true;
+		}
+
+		if (win == true) {
+			winDelay -= Time.deltaTime;
+			if (winDelay <= 0){
+				Application.LoadLevel("Menu");
 			}
+		} else {
 
-			//Space - Water
-			if (Input.GetKeyDown ("space")) {
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				if (Physics.Raycast (ray, out mouseClick, 1000)) {
-					if (mouseClick.collider.tag == "Tree" && water) {
-						mouseClick.collider.BroadcastMessage ("Extinguish");
-					} else if (mouseClick.collider.tag == "Water") {
-						if (!water) {
-							water = true;
-							currentBucket = fBucketTex;
-							audio.PlayOneShot (waterscoop, SFXvol);
+			if (!instructions) {
+				gameTime += Time.deltaTime;
+
+				//Left click - seed pick up / placement
+				if (Input.GetMouseButtonDown (0)) {
+					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+					if (Physics.Raycast (ray, out mouseClick, 1000)) {
+						if (mouseClick.collider.tag == "Ground" && playerSeeds > 0) {
+							Instantiate (tree, mouseClick.point, Quaternion.identity);
+							playerSeeds --;
+							audio.PlayOneShot (plant, SFXvol);
+						} else if (mouseClick.collider.tag == "Seed") {
+							audio.PlayOneShot (seedpu, SFXvol);
+							playerSeeds ++;
+							Destroy (mouseClick.collider.gameObject);
 						}
 					}
 				}
-			}
 
-			//Rick click - remove weeds
-			if (Input.GetMouseButtonDown (1)) {
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				if (Physics.Raycast (ray, out mouseClick, 1000)) {
-					if (mouseClick.collider.tag == "Vine") {
-						mouseClick.collider.BroadcastMessage ("VineClick");
-						audio.PlayOneShot (dig, 0.3f);
+				//Space - Water
+				if (Input.GetKeyDown ("space")) {
+					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+					if (Physics.Raycast (ray, out mouseClick, 1000)) {
+						if (mouseClick.collider.tag == "Tree" && water) {
+							mouseClick.collider.BroadcastMessage ("Extinguish");
+						} else if (mouseClick.collider.tag == "Water") {
+							if (!water) {
+								water = true;
+								currentBucket = fBucketTex;
+								audio.PlayOneShot (waterscoop, SFXvol);
+							}
+						}
 					}
 				}
-			}
-		} else if (instructions) {
-			if (Input.GetMouseButtonDown (0)) {
-				instructions = false;
+
+				//Rick click - remove weeds
+				if (Input.GetMouseButtonDown (1)) {
+					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+					if (Physics.Raycast (ray, out mouseClick, 1000)) {
+						if (mouseClick.collider.tag == "Vine") {
+							mouseClick.collider.BroadcastMessage ("VineClick");
+							audio.PlayOneShot (dig, 0.3f);
+						}
+					}
+				}
+			} else if (instructions) {
+				if (Input.GetMouseButtonDown (0)) {
+					instructions = false;
+				}
 			}
 		}
 
@@ -98,7 +118,9 @@ public class GameController : MonoBehaviour {
 	//Temp UI
 	void OnGUI(){
 
-		if (instructions) {
+		if (win) {
+			GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), winTex);
+		} else if (instructions) {
 			GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex);
 		} else {
 
