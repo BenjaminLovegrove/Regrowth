@@ -25,7 +25,7 @@ public class GameController : MonoBehaviour {
 	public float winDelay = 4;
 	public bool win = false;
 
-	public float SFXvol = 0.5f;
+	public float SFXvol = 0.3f;
 	public AudioClip extinguish;
 	public AudioClip dig;
 	public AudioClip plant;
@@ -102,7 +102,7 @@ public class GameController : MonoBehaviour {
 					if (Physics.Raycast (ray, out mouseClick, 1000)) {
 						if (mouseClick.collider.tag == "Vine") {
 							mouseClick.collider.BroadcastMessage ("VineClick");
-							audio.PlayOneShot (dig, 0.3f);
+							audio.PlayOneShot (dig, SFXvol);
 						}
 					}
 				}
@@ -156,6 +156,6 @@ public class GameController : MonoBehaviour {
 	void UsedWater(){
 		currentBucket = eBucketTex;
 		water = false;
-		audio.PlayOneShot(extinguish,0.3f);
+		audio.PlayOneShot(extinguish,SFXvol);
 	}
 }

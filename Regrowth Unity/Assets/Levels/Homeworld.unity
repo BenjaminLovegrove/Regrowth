@@ -2831,7 +2831,10 @@ MonoBehaviour:
   eBucketTex: {fileID: 2800000, guid: d91358dcaa001af42986c69f531d143c, type: 3}
   fBucketTex: {fileID: 2800000, guid: b509fcbe850d2ff4aa927feea6afb7a3, type: 3}
   clockTex: {fileID: 2800000, guid: 43028e7988fa4ab4faa604e6ac7f7b4b, type: 3}
-  SFXvol: .800000012
+  winTex: {fileID: 2800000, guid: c61fef98403ccf943b884f855d744c10, type: 3}
+  winDelay: 4
+  win: 0
+  SFXvol: .300000012
   extinguish: {fileID: 8300000, guid: 6a2e64a8a15cd0f4a97e31bc9ad36514, type: 3}
   dig: {fileID: 8300000, guid: 179546a5666f64a4aaac6a4b8c080ffe, type: 3}
   plant: {fileID: 8300000, guid: 238a4daaeab8e5d4f84988d8f8c516c8, type: 3}
@@ -4105,7 +4108,7 @@ GameObject:
   - 4: {fileID: 838388893}
   - 114: {fileID: 838388894}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: CamParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
