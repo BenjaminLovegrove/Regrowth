@@ -30,7 +30,7 @@ public class GameController : MonoBehaviour {
 	Texture currentBucket;
 
 	public Texture winTex;
-	public float winDelay = 6;
+	public float winDelay = 8;
 	public bool win = false;
 
 	public float SFXvol = 0.3f;
@@ -139,13 +139,13 @@ public class GameController : MonoBehaviour {
 			if (instructions == 0){
 				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex);
 			} else if (instructions == 1){
-				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex1);
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 512, 1024, 1024), instructionsTex1);
 			} else if (instructions == 2){
-				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex2);
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 512, 1024, 1024), instructionsTex2);
 			} else if (instructions == 3){
 				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex3);
 			} else if (instructions == 4){
-				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex4);
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 512, 1024, 1024), instructionsTex4);
 			} else if (instructions == 5){
 				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex5);
 			}

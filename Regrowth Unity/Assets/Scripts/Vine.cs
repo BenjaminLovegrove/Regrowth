@@ -52,16 +52,20 @@ public class Vine : MonoBehaviour {
 			dugVine.renderer.enabled = false;
 			vineGraphics.renderer.enabled = true;
 			vactive = true;
-			audio.PlayOneShot(growSFX,1);
+			audio.PlayOneShot (growSFX, 1);
 
-			trees = GameObject.FindGameObjectsWithTag("Tree");
-
-			foreach (GameObject tree in trees){
-				if (Vector3.Distance(this.transform.position, tree.transform.position) < 2.5f){
-					tree.BroadcastMessage("Dying", SendMessageOptions.DontRequireReceiver);
-				}
-			}
+			Invoke ("KillTrees", 1f);
 		}
 
+	}
+
+	void KillTrees(){
+		trees = GameObject.FindGameObjectsWithTag("Tree");
+		
+		foreach (GameObject tree in trees){
+			if (Vector3.Distance(this.transform.position, tree.transform.position) < 2.5f){
+				tree.BroadcastMessage("Dying", SendMessageOptions.DontRequireReceiver);
+			}
+		}
 	}
 }

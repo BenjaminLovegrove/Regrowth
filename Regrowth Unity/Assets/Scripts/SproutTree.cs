@@ -81,7 +81,7 @@ public class SproutTree : MonoBehaviour {
 			}
 
 			if (burning){
-				Burning();
+				Invoke("Burning", 1f);
 				lifetimer -= Time.deltaTime;
 
 				if (!audio.isPlaying){
