@@ -12,6 +12,7 @@ public class GameController : MonoBehaviour {
 	public int levelTrees = 20;
 	public GUIStyle myGUItext;
 	public GUIStyle myGUItextLge;
+	public Font BauHaus;
 
 	public Texture instructionsTex;
 	public Texture instructionsTex1;
@@ -29,7 +30,7 @@ public class GameController : MonoBehaviour {
 	Texture currentBucket;
 
 	public Texture winTex;
-	public float winDelay = 4;
+	public float winDelay = 6;
 	public bool win = false;
 
 	public float SFXvol = 0.3f;
@@ -38,26 +39,31 @@ public class GameController : MonoBehaviour {
 	public AudioClip plant;
 	public AudioClip seedpu;
 	public AudioClip waterscoop;
-
+	public AudioClip Bop;
+	public AudioClip WinDing;
+	
 	int instructions = 0;
 
 	void Start () {
 		currentBucket = eBucketTex;
 
 		myGUItext = new GUIStyle ();
-		myGUItext.fontSize = 20;
+		myGUItext.fontSize = 30;
+		myGUItext.font = BauHaus;
 
 		myGUItextLge = new GUIStyle ();
-		myGUItextLge.fontSize = 30;
+		myGUItextLge.fontSize = 45;
+		myGUItextLge.font = BauHaus;
 	}
 
 	void Update () {
 
 		if (Input.GetKey(KeyCode.Escape)){
-			Application.Quit();
+			Application.LoadLevel("Menu");
 		}
 
-		if (treeCount >= levelTrees) {
+		if (treeCount >= levelTrees && !win) {
+			audio.PlayOneShot (WinDing, SFXvol);
 			win = true;
 		}
 
@@ -69,6 +75,7 @@ public class GameController : MonoBehaviour {
 		} else if (instructions <=5) {
 			if (Input.GetMouseButtonDown (0)) {
 				instructions ++;
+				audio.PlayOneShot (Bop, SFXvol);
 			}
 
 		} else if (instructions > 5) {

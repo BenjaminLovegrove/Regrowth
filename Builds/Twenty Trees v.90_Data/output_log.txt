@@ -1,0 +1,44 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3054 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.90_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.90_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.90_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.90_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.90_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.90_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.042 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.90_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 1.159508 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 746.
+Total: 0.661070 ms (FindLiveObjects: 0.028611 ms CreateObjectMapping: 0.010540 ms MarkObjects: 0.155103 ms  DeleteObjects: 0.049693 ms)
+
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.90_Data\Managed\System.dll (this message is harmless)
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+UnloadTime: 15.014888 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 89944 unused Assets to reduce memory usage. Loaded Objects now: 545.
+Total: 382.986725 ms (FindLiveObjects: 5.627684 ms CreateObjectMapping: 16.333414 ms MarkObjects: 0.179498 ms  DeleteObjects: 360.427216 ms)
+

@@ -1086,6 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuHeader: {fileID: 2800000, guid: af44f7b9b1723764890851ef705d8827, type: 3}
+  BGMcredit: {fileID: 2800000, guid: fe3096d8a5fdd5544943c0f6fb1ffac8, type: 3}
   centerobj: {fileID: 1397300107}
 --- !u!4 &276737024
 Transform:

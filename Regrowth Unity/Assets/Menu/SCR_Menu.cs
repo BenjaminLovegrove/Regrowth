@@ -4,6 +4,7 @@ using System.Collections;
 public class SCR_Menu : MonoBehaviour {
 
 	public Texture menuHeader;
+	public Texture BGMcredit;
 	public Transform centerobj;
 
 	void Update () {
@@ -22,6 +23,7 @@ public class SCR_Menu : MonoBehaviour {
 	void OnGUI(){
 
 		GUI.DrawTexture (new Rect (Screen.width * 0.5f, 0, 512, 256), menuHeader);
+		GUI.DrawTexture (new Rect (Screen.width * 0.9f, Screen.height * 0.9f, 128, 64), BGMcredit);
 
 		if (GUI.Button(new Rect(Screen.width * 0.7f, Screen.height * 0.45f, 200, 50), "Play")){
 			Application.LoadLevel ("Homeworld");
