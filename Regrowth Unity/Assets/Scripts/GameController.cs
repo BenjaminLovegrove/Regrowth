@@ -14,6 +14,13 @@ public class GameController : MonoBehaviour {
 	public GUIStyle myGUItextLge;
 
 	public Texture instructionsTex;
+	public Texture instructionsTex1;
+	public Texture instructionsTex2;
+	public Texture instructionsTex3;
+	public Texture instructionsTex4;
+	public Texture instructionsTex5;
+
+
 	public Texture treeTex;
 	public Texture seedTex;
 	public Texture eBucketTex;
@@ -32,7 +39,7 @@ public class GameController : MonoBehaviour {
 	public AudioClip seedpu;
 	public AudioClip waterscoop;
 
-	bool instructions = true;
+	int instructions = 0;
 
 	void Start () {
 		currentBucket = eBucketTex;
@@ -59,9 +66,13 @@ public class GameController : MonoBehaviour {
 			if (winDelay <= 0){
 				Application.LoadLevel("Menu");
 			}
-		} else {
+		} else if (instructions <=5) {
+			if (Input.GetMouseButtonDown (0)) {
+				instructions ++;
+			}
 
-			if (!instructions) {
+		} else if (instructions > 5) {
+
 				gameTime += Time.deltaTime;
 
 				//Left click - seed pick up / placement
@@ -106,11 +117,7 @@ public class GameController : MonoBehaviour {
 						}
 					}
 				}
-			} else if (instructions) {
-				if (Input.GetMouseButtonDown (0)) {
-					instructions = false;
-				}
-			}
+
 		}
 
 	}
@@ -120,8 +127,22 @@ public class GameController : MonoBehaviour {
 
 		if (win) {
 			GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), winTex);
-		} else if (instructions) {
-			GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex);
+		} else if (instructions <= 5) {
+
+			if (instructions == 0){
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex);
+			} else if (instructions == 1){
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex1);
+			} else if (instructions == 2){
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex2);
+			} else if (instructions == 3){
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex3);
+			} else if (instructions == 4){
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex4);
+			} else if (instructions == 5){
+				GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), instructionsTex5);
+			}
+
 		} else {
 
 			GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .2f - 64, 128, 128), treeTex);

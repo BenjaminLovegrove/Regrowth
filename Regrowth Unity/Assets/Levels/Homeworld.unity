@@ -2825,7 +2825,12 @@ MonoBehaviour:
     m_FixedHeight: 0
     m_StretchWidth: 1
     m_StretchHeight: 0
-  instructionsTex: {fileID: 2800000, guid: 4db4b9d2e8ca59d4fb674f9beed254d7, type: 3}
+  instructionsTex: {fileID: 2800000, guid: 24f12f6c6068e384984bdf3ecc3558a8, type: 3}
+  instructionsTex1: {fileID: 2800000, guid: 0cf0e99165dde6849a2bdce7d4951f84, type: 3}
+  instructionsTex2: {fileID: 2800000, guid: d8211116d0e8c2a42815f4a32dca2faa, type: 3}
+  instructionsTex3: {fileID: 2800000, guid: 10ca5b54d87a11f468a6704ef8c6e3e2, type: 3}
+  instructionsTex4: {fileID: 2800000, guid: 23e6715b50cc1494da4c67761936ad54, type: 3}
+  instructionsTex5: {fileID: 2800000, guid: 419a3ba463b873547a385b80ba84e733, type: 3}
   treeTex: {fileID: 2800000, guid: b3aadafa48ed3b0409fceb4339d0a194, type: 3}
   seedTex: {fileID: 2800000, guid: 73fcfd80b51126e4681b3104872eabcc, type: 3}
   eBucketTex: {fileID: 2800000, guid: d91358dcaa001af42986c69f531d143c, type: 3}
