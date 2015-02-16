@@ -54,10 +54,12 @@ public class GameController : MonoBehaviour {
 
 		myGUItext = new GUIStyle ();
 		myGUItext.fontSize = 30;
+		myGUItext.normal.textColor = Color.black;
 		myGUItext.font = BauHaus;
 
 		myGUItextLge = new GUIStyle ();
 		myGUItextLge.fontSize = 45;
+		myGUItextLge.normal.textColor = Color.white;
 		myGUItextLge.font = BauHaus;
 	}
 
@@ -181,7 +183,7 @@ public class GameController : MonoBehaviour {
 			GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .6f - 24, 64, 64), clockTex);
 			GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .7f - 24, 64, 64), currentBucket);
 
-			GUI.Label (new Rect (Screen.width * .15f, Screen.height * .2f, Screen.width, 20), treeCount + "/" + levelTrees, myGUItextLge);
+			GUI.Label (new Rect (Screen.width * .15f, Screen.height * .18f, Screen.width, 20), treeCount + "/" + levelTrees, myGUItextLge);
 
 			GUI.Label (new Rect (Screen.width * .1f, Screen.height * .5f, Screen.width, 20), playerSeeds.ToString (), myGUItext);
 			GUI.Label (new Rect (Screen.width * .1f, Screen.height * .6f, Screen.width, 20), gameTime.ToString ("0"), myGUItext);

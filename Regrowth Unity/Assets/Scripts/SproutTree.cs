@@ -20,6 +20,7 @@ public class SproutTree : MonoBehaviour {
 	Transform fireGraph4;
 	Transform fireGraph5;
 	ParticleEmitter smokeGraph;
+	Light flameLight;
 	int fireRNG;
 
 	public AudioClip growSFX;
@@ -34,6 +35,7 @@ public class SproutTree : MonoBehaviour {
 		fireGraph5 = transform.Find ("FlamingTree/Fire.003");
 		smokeGraph = GetComponentInChildren<ParticleEmitter>();
 		smokeGraph.emit = false;
+		flameLight = GetComponentInChildren<Light>();
 
 		growTimer = Random.Range (25, 50);
 	}
@@ -105,6 +107,7 @@ public class SproutTree : MonoBehaviour {
 			fireGraph4.renderer.enabled = true;
 			fireGraph5.renderer.enabled = true;
 			smokeGraph.emit = true;
+			flameLight.light.enabled = true; 
 		}
 	}
 
@@ -139,6 +142,7 @@ public class SproutTree : MonoBehaviour {
 
 
 			smokeGraph.emit = false;
+			flameLight.light.enabled = false; 
 		}
 	}
 
