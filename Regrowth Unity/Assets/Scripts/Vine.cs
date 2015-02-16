@@ -54,7 +54,7 @@ public class Vine : MonoBehaviour {
 			vactive = true;
 			audio.PlayOneShot (growSFX, 1);
 
-			Invoke ("KillTrees", 1f);
+			KillTrees();
 		}
 
 	}

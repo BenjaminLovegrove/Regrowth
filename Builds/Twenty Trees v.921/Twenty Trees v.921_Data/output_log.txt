@@ -1,0 +1,31 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3054 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.921\Twenty Trees v.921_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.921\Twenty Trees v.921_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.921\Twenty Trees v.921_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.921\Twenty Trees v.921_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.921\Twenty Trees v.921_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.921\Twenty Trees v.921_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v.921\Twenty Trees v.921_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 1.110719 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 746.
+Total: 0.799609 ms (FindLiveObjects: 0.030418 ms CreateObjectMapping: 0.012348 ms MarkObjects: 0.173775 ms  DeleteObjects: 0.054813 ms)
+
+UnloadTime: 6.181236 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 21654 unused Assets to reduce memory usage. Loaded Objects now: 547.
+Total: 68.368263 ms (FindLiveObjects: 0.979107 ms CreateObjectMapping: 3.152659 ms MarkObjects: 0.159620 ms  DeleteObjects: 63.624218 ms)
+
