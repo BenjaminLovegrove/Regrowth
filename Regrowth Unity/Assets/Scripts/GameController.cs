@@ -209,6 +209,6 @@ public class GameController : MonoBehaviour {
 	void UsedWater(){
 		currentBucket = eBucketTex;
 		water = false;
-		audio.PlayOneShot(extinguish,SFXvol);
+		audio.PlayOneShot(extinguish,0.2f);
 	}
 }
