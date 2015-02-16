@@ -21,6 +21,10 @@ public class GameController : MonoBehaviour {
 	public Texture instructionsTex4;
 	public Texture instructionsTex5;
 
+	public Texture needWater;
+	public Texture needSeeds;
+	float needWaterTimer = 0;
+	float needSeedsTimer = 0;
 
 	public Texture treeTex;
 	public Texture seedTex;
@@ -41,6 +45,7 @@ public class GameController : MonoBehaviour {
 	public AudioClip waterscoop;
 	public AudioClip Bop;
 	public AudioClip WinDing;
+	public AudioClip failBoop;
 	
 	int instructions = 0;
 
@@ -57,6 +62,8 @@ public class GameController : MonoBehaviour {
 	}
 
 	void Update () {
+		needSeedsTimer -= Time.deltaTime;
+		needWaterTimer -= Time.deltaTime;
 
 		if (Input.GetKey(KeyCode.Escape)){
 			Application.LoadLevel("Menu");
@@ -86,7 +93,10 @@ public class GameController : MonoBehaviour {
 				if (Input.GetMouseButtonDown (0)) {
 					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 					if (Physics.Raycast (ray, out mouseClick, 1000)) {
-						if (mouseClick.collider.tag == "Ground" && playerSeeds > 0) {
+						if (mouseClick.collider.tag == "Ground" && playerSeeds <= 0) {
+							needSeedsTimer = 2;
+							audio.PlayOneShot (failBoop, 0.2f);
+						} else if (mouseClick.collider.tag == "Ground" && playerSeeds > 0) {
 							Instantiate (tree, mouseClick.point, Quaternion.identity);
 							playerSeeds --;
 							audio.PlayOneShot (plant, SFXvol);
@@ -102,7 +112,10 @@ public class GameController : MonoBehaviour {
 				if (Input.GetKeyDown ("space")) {
 					Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 					if (Physics.Raycast (ray, out mouseClick, 1000)) {
-						if (mouseClick.collider.tag == "Tree" && water) {
+						if (mouseClick.collider.tag == "Tree" && !water) {
+							needWaterTimer = 2;
+							audio.PlayOneShot (failBoop, 0.2f);
+						} else if (mouseClick.collider.tag == "Tree" && water) {
 							mouseClick.collider.BroadcastMessage ("Extinguish");
 						} else if (mouseClick.collider.tag == "Water") {
 							if (!water) {
@@ -132,6 +145,8 @@ public class GameController : MonoBehaviour {
 	//Temp UI
 	void OnGUI(){
 
+
+
 		if (win) {
 			GUI.DrawTexture (new Rect (Screen.width / 2 - 512, Screen.height / 2 - 256, 1024, 512), winTex);
 		} else if (instructions <= 5) {
@@ -151,6 +166,14 @@ public class GameController : MonoBehaviour {
 			}
 
 		} else {
+
+			if (needSeedsTimer >= 0) {
+				GUI.DrawTexture (new Rect (Screen.width / 2, Screen.height / 4 - 64, 256, 128), needSeeds);
+			}
+			
+			if (needWaterTimer >= 0) {
+				GUI.DrawTexture (new Rect (Screen.width / 2, Screen.height / 4 - 64, 256, 128), needWater);
+			}
 
 			GUI.DrawTexture (new Rect (Screen.width * .05f, Screen.height * .2f - 64, 128, 128), treeTex);
 
