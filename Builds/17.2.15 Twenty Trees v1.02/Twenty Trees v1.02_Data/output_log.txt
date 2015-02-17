@@ -1,0 +1,35 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3054 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.02_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.02_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.02_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.02_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.02_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.02_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.042 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.02_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 1.471221 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 931.
+Total: 0.684562 ms (FindLiveObjects: 0.032827 ms CreateObjectMapping: 0.011745 ms MarkObjects: 0.164740 ms  DeleteObjects: 0.039152 ms)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+UnloadTime: 9.690784 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 59019 unused Assets to reduce memory usage. Loaded Objects now: 642.
+Total: 222.777512 ms (FindLiveObjects: 3.350228 ms CreateObjectMapping: 9.602842 ms MarkObjects: 0.173173 ms  DeleteObjects: 209.228729 ms)
+

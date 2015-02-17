@@ -1,0 +1,87 @@
+Initialize engine version: 4.6.2f1 (bd99309c2ad7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon R9 200 Series (ID=0x6798)
+    Vendor:   ATI
+    VRAM:     3054 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\17.2. 15 Twenty Trees v1.01\Twenty Trees v1.01_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\17.2. 15 Twenty Trees v1.01\Twenty Trees v1.01_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\17.2. 15 Twenty Trees v1.01\Twenty Trees v1.01_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\17.2. 15 Twenty Trees v1.01\Twenty Trees v1.01_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\17.2. 15 Twenty Trees v1.01\Twenty Trees v1.01_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\17.2. 15 Twenty Trees v1.01\Twenty Trees v1.01_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.043 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\17.2. 15 Twenty Trees v1.01\Twenty Trees v1.01_Data\Managed\System.Core.dll (this message is harmless)
+UnloadTime: 1.268231 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 931.
+Total: 0.733652 ms (FindLiveObjects: 0.033429 ms CreateObjectMapping: 0.012649 ms MarkObjects: 0.160223 ms  DeleteObjects: 0.040055 ms)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 377)
+
+UnloadTime: 16.541525 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 119766 unused Assets to reduce memory usage. Loaded Objects now: 642.
+Total: 544.977661 ms (FindLiveObjects: 7.065174 ms CreateObjectMapping: 19.939339 ms MarkObjects: 0.183413 ms  DeleteObjects: 517.265686 ms)
+

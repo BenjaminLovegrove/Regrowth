@@ -12,32 +12,7 @@ Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees
 Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.0\Twenty Trees v1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.0\Twenty Trees v1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.0\Twenty Trees v1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.203 seconds
+- Completed reload, in  0.042 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\BenJay\Documents\GitHub\Regrowth\Builds\Twenty Trees v1.0\Twenty Trees v1.0_Data\Managed\System.Core.dll (this message is harmless)
-UnloadTime: 0.723413 ms
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 931.
-Total: 0.733351 ms (FindLiveObjects: 0.042465 ms CreateObjectMapping: 0.012950 ms MarkObjects: 0.179498 ms  DeleteObjects: 0.041862 ms)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 377)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 377)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 377)
-
-UnloadTime: 10.193740 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 59930 unused Assets to reduce memory usage. Loaded Objects now: 642.
-Total: 224.588745 ms (FindLiveObjects: 3.390283 ms CreateObjectMapping: 9.721202 ms MarkObjects: 0.171366 ms  DeleteObjects: 210.827652 ms)
-
